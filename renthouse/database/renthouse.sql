@@ -56,8 +56,10 @@ CREATE TABLE `add_property` (
 --
 
 INSERT INTO `add_property` (`property_id`, `country`, `province`, `zone`, `district`, `city`, `vdc_municipality`, `ward_no`, `tole`, `contact_no`, `property_type`, `estimated_price`, `total_rooms`, `bedroom`, `living_room`, `kitchen`, `bathroom`, `description`, `latitude`, `longitude`, `owner_id`) VALUES
-(123, 'Nepal', 'Bagmati Pradesh', 'Bagmati', 'Taplejung', 'Kirtipur', 'Municipality', 3, 'palifal', 9860462146, 'Full House Rent', 2000000, 2, 3, 3, 3, 3, 'nmjhvgc', '27.679130', '85.327872', 1),
-(124, 'Nepal', 'Gandaki Pradesh', 'Gandaki', 'Kaski', 'Pokhara', 'Municipality', 14, 'Lakeside', 9803480519, 'Full House Rent', 2000000, 15, 5, 2, 2, 7, 'This is a beautiful property located near Lakeside, Pokhara.', '27.679130', '85.327872', 1);
+(123, 'India', 'Kerala', 'South', 'Ernakulam', 'Kochi', 'Municipality', 3, 'Fort Kochi', 9860462146, 'Full House Rent', 2000000, 2, 3, 3, 3, 3, 'This is a nice property in Fort Kochi.', '9.9664', '76.2597', 1),
+(124, 'India', 'Kerala', 'South', 'Thiruvananthapuram', 'Thiruvananthapuram', 'Municipality', 14, 'Kovalam', 9803480519, 'Full House Rent', 2000000, 15, 5, 2, 2, 7, 'This is a beautiful property located near Kovalam Beach, Thiruvananthapuram.', '8.4021', '76.9785', 1),
+(125, 'India', 'Kerala', 'South', 'Alappuzha', 'Alappuzha', 'Municipality', 7, 'Punnapra', 9876543210, 'Full House Rent', 1500000, 10, 4, 2, 1, 5, 'Charming house near Punnapra Beach.', '9.4910', '76.3388', 2),
+(126, 'India', 'Kerala', 'South', 'Wayanad', 'Kalpetta', 'Municipality', 5, 'Lakkidi', 9898765432, 'Full House Rent', 3000000, 20, 8, 4, 2, 6, 'Beautiful property in the scenic area of Lakkidi.', '11.5141', '76.0388', 2);
 
 -- --------------------------------------------------------
 
@@ -76,7 +78,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `email`, `password`) VALUES
-(1, 'nikeshtiwari3230@gmail.com', '12345');
+(1, 'admin@gmail.com', '12345');
 
 -- --------------------------------------------------------
 

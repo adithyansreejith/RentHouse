@@ -19,7 +19,7 @@ include("engine.php");
  <div class="container-fluid">
   <ul class="nav nav-pills nav-justified">
     <li class="active" style="background-color: #FFF8DC"><a data-toggle="pill" href="#home">Profile</a></li>
-    <li style="background-color: #FAC0E6"><a data-toggle="pill" href="#menu4">Messages</a></li>
+   <!-- <li style="background-color: #FAC0E6"><a data-toggle="pill" href="#menu4">Messages</a></li>-->
     <li style="background-color: #FAF0E6"><a data-toggle="pill" href="#menu1">Add Property</a></li>
     <li style="background-color: #FFFACD"><a data-toggle="pill" href="#menu2">View Property</a></li>
     <li style="background-color: #FFFAF0"><a data-toggle="pill" href="#menu3">Update Property</a></li>

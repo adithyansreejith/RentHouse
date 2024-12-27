@@ -208,7 +208,7 @@ include("navbar.php");
 
               <table id="myTable4">
                 <tr class="header">
-                  <th>Booked Id</th>
+                  
                   <th>Booked By</th>
                   <th>Booker Address</th>
                   <th>Property Province</th>
@@ -233,7 +233,7 @@ include("navbar.php");
           
        ?>
                 <tr>
-                  <td><?php echo $rows['booking_id'] ?></td>
+                  
                   
         <?php 
         $tenant_id=$rows['tenant_id'];

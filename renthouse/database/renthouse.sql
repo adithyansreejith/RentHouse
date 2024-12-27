@@ -49,6 +49,7 @@ CREATE TABLE `add_property` (
   `latitude` decimal(9,6) NOT NULL,
   `longitude` decimal(9,6) NOT NULL,
   `owner_id` int(10) NOT NULL
+  `booked` varchar(3) DEFAULT 'No' NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -105,6 +106,16 @@ INSERT INTO `owner` (`owner_id`, `full_name`, `email`, `password`, `phone_no`, `
 (1, 'Nikesh Tiwari', 'nikeshtiwari3230@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b', 987654321, 'Kirtipur-3', 'Citizenship', 'owner-photo/nikesh.png');
 
 -- --------------------------------------------------------
+CREATE TABLE `booking` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(10) NOT NULL,
+  `property_id` int(10) NOT NULL,
+  `booking_date` date NOT NULL,
+  `status` varchar(50) DEFAULT 'Booked',
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`tenant_id`) REFERENCES `tenant`(`tenant_id`),
+  FOREIGN KEY (`property_id`) REFERENCES `add_property`(`property_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Table structure for table `property_photo`

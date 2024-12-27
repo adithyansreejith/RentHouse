@@ -170,10 +170,10 @@ include('booking-engine.php');
               <td><h3>Bathroom:</h3></td>
               <td><h4><?php echo $rows['bathroom']; ?></h4></td>
             </tr>
-            <tr>
+            <!--<tr>
               <td><h3>Booked:</h3></td>
               <td><h4><?php echo $rows['booked']; ?></h4></td>
-            </tr>
+            </tr>-->
             <tr>
               <td><h3>Description:</h3></td>
               <td><h4><?php echo $rows['description']; ?></h4></td>
@@ -206,13 +206,13 @@ if(isset($_SESSION["email"]) && !empty($_SESSION['email'])){
   <?php } ?>
   </div>
 </form>
-<form method="POST" action="chatpage.php">
+<!--<form method="POST" action="chatpage.php">
   <div class="col-sm-6">
     <input type="hidden" name="owner_id" value="<?php echo $rows['owner_id']; ?>">
     <input type="submit" class="btn btn-lg btn-success" name="send_message" style="width: 100%" value="Send Message" >
     
   </div>
-  </form>
+  </form>-->
 </div>
 
 <?php }

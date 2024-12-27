@@ -30,14 +30,7 @@ $sql="SELECT * FROM tenant where email='$u_email'";
       	if($query2)
 		{
 
-                $email=$rows['email'];
-                $msg="Thankyou Mr/Ms ".$rows['full_name']." for booking Property. Please visit the property location to view it personally.";
-                $recipient=$email;
-                $subject="Property Booked";
-                $mailheaders="From: RentHouse\n";
-
-                //mail send
-                mail($recipient,$subject,$msg,$mailheaders);
+              
 
 		?>
 

@@ -1,4 +1,5 @@
 <?php 
+
 $property_id='';
 $country='';
 $province='';
@@ -151,8 +152,14 @@ function owner_update(){
 	$phone_no=validate($_POST['phone_no']);
 	$address=validate($_POST['address']);
 	$id_type=validate($_POST['id_type']);
-	$password = md5($password); // Encrypt password
-		$sql = "UPDATE owner SET full_name='$full_name',email='$email',phone_no='$phone_no',address='$address',id_type='$id_type' WHERE owner_id='$owner_id'";
+	if (!empty($_POST['password'])) {
+		// Use password_hash() to securely hash the password
+		$password = password_hash(validate($_POST['password']), PASSWORD_DEFAULT);
+	} else {
+		// If no password is provided, retain the existing password
+		$password_query = "";
+	}
+			$sql = "UPDATE owner SET full_name='$full_name',email='$email',phone_no='$phone_no',address='$address',id_type='$id_type' WHERE owner_id='$owner_id'";
 		$query=mysqli_query($db,$sql);
 		if(!empty($query)){
 			?>
